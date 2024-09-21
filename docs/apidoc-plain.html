@@ -1,0 +1,161 @@
+  <h4><a href='#products'>Products</a></h4>
+  <ul>
+      <li><a href='#products-index'>index</a></li>
+      <li><a href='#products-show'>show</a></li>
+      <li><a href='#products-update'>update</a></li>
+      <li><a href='#products-compute_price'>compute_price</a></li>
+  </ul>
+
+
+
+  <hr/>
+
+  <div>
+    <h2 id="products">
+      <a href='#products'>Products</a><br>
+      <small></small>
+    </h2>
+  </div>
+
+
+  <div>
+
+      <hr/>
+
+      <h3 id="products-index">
+      <a href='#products'>Products</a> / <a href='#products-index'>index</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/api/v1/products
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+<p>Get the products list with attributes</p>
+
+
+
+      </div>
+      <hr/>
+
+      <h3 id="products-show">
+      <a href='#products'>Products</a> / <a href='#products-show'>show</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/api/v1/products/:code
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+<p>Get a product attributes</p>
+
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>code </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>code of the product</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="products-update">
+      <a href='#products'>Products</a> / <a href='#products-update'>update</a>
+      </h3>
+
+      <div>
+          <h4>
+              PUT /api/api/v1/products
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+<p>Update a product and return its attributes</p>
+
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>id </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be a String</p>
+ ]
+      </small>
+      
+<p>code of the product</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+      <hr/>
+
+      <h3 id="products-compute_price">
+      <a href='#products'>Products</a> / <a href='#products-compute_price'>compute_price</a>
+      </h3>
+
+      <div>
+          <h4>
+              GET /api/api/v1/products/compute_price
+            <br>
+            <small></small>
+          </h4>
+      </div>
+
+      <div>
+        
+<p>Compute the price of selected products</p>
+
+
+
+          <h4>Params</h4>
+          <ul>
+    <li>
+      <strong>codes </strong>:
+      <small>
+        required
+        
+          [ 
+<p>Must be an array of any type</p>
+ ]
+      </small>
+      
+<p>products codes to compute price</p>
+
+    </li>
+    
+</ul>
+
+      </div>
+  </div>

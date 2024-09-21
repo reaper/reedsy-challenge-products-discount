@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API documentation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/bootstrap.min.css'/>
+<link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/prettify.css'/>
+<link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/bundled/bootstrap-responsive.min.css'/>
+  <link type='text/css' rel='stylesheet' href='./apidoc/stylesheets/application.css'/>
+  <!-- IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id='container'>
+          <h4><a href='#products'>Products</a></h4>
+  <ul>
+      <li><a href='#products-index'>index</a></li>
+      <li><a href='#products-show'>show</a></li>
+      <li><a href='#products-update'>update</a></li>
+      <li><a href='#products-compute_price'>compute_price</a></li>
+  </ul>
+
+
+
+<div>
+<p>Another API description</p>
+</div>
+
+<hr>
+
+
+  <ul class='breadcrumb'  id='products'>
+    <li><a href='#'>ReedsyChallenge</a><span class='divider'>/</span></li>
+    <li class='active'>Products</li>
+  </ul>
+
+  <div class='page-header'>
+    <h1>
+      <a href='#products'>Products</a><br>
+      <small></small>
+    </h1>
+  </div>
+
+
+  <div class='accordion' id='accordion'>
+
+      <hr>
+
+      <ul class='breadcrumb' id='products-index'>
+        <li>
+          <a href='#'>ReedsyChallenge</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#products'>Products</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>index</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#products-index'>
+              GET /api/api/v1/products
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+<p>Get the products list with attributes</p>
+
+
+
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='products-show'>
+        <li>
+          <a href='#'>ReedsyChallenge</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#products'>Products</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>show</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#products-show'>
+              GET /api/api/v1/products/:code
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+<p>Get a product attributes</p>
+
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>code </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>code of the product</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='products-update'>
+        <li>
+          <a href='#'>ReedsyChallenge</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#products'>Products</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>update</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#products-update'>
+              PUT /api/api/v1/products
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+<p>Update a product and return its attributes</p>
+
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>id </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>code of the product</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be a String</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+      <hr>
+
+      <ul class='breadcrumb' id='products-compute_price'>
+        <li>
+          <a href='#'>ReedsyChallenge</a>
+          <span class='divider'>/</span>
+        </li>
+        <li>
+          <a href='#products'>Products</a>
+          <span class='divider'>/</span>
+        </li>
+        <li class='active'>compute_price</li>
+      </ul>
+
+      <div>
+          <h3>
+            <a href='#products-compute_price'>
+              GET /api/api/v1/products/compute_price
+            </a><br>
+            <small></small>
+          </h3>
+      </div>
+
+      <div>
+        
+<p>Compute the price of selected products</p>
+
+
+
+          <h2>Params</h2>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Param name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr style='background-color:rgb(255,255,255);'>
+    <td>
+      <strong>codes </strong><br>
+      <small>
+        required
+        
+      </small>
+    </td>
+    <td>
+      
+<p>products codes to compute price</p>
+
+        <p><strong>Validations:</strong></p>
+        <ul>
+            <li>
+<p>Must be an array of any type</p>
+</li>
+        </ul>
+
+    </td>
+
+  </tr>
+
+  
+
+            </tbody>
+          </table>
+      </div>
+  </div>
+
+
+        
+      </div>
+    </div>
+    <hr>
+    <footer></footer>
+  </div>
+  <script type='text/javascript' src='./apidoc/javascripts/bundled/jquery.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/bundled/bootstrap-collapse.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/bundled/prettify.js'></script>
+<script type='text/javascript' src='./apidoc/javascripts/apipie.js'></script>
+</body>
+</html>
